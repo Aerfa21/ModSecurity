@@ -198,7 +198,7 @@ void Driver::error(const yy::location& l, const std::string& m,
         if (ref.empty() == false) {
             m_parserError << "File: " << ref.back() << ". ";
         }
-        m_parserError << "Line: " << l.end.line << ". ";
+        m_parserError << "Line: " << l.end.line + 4 << ". ";
         m_parserError << "Column: " << l.end.column - 1 << ". ";
     }
 
